@@ -9,11 +9,10 @@ funtion setThisWithCall (fn, thisValue, argument){
 
 funtion setThisWithApply (fn, thisValue, argument){
   return fn.apply(thisValue, ourArguments);
-  
+
 }
 
 funtion returnNewFunctionOf(functionToBeCopied, thisValue){
   const copy = functionToBeCopied.bind(thisValue);
   return copy;
 }
-
